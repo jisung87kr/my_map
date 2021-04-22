@@ -1,0 +1,46 @@
+version: "3.2"
+
+services:
+  web:
+    build:
+      context: ./_docker/bin/php8
+    restart: always
+    container_name: web
+    ports:
+      - "9090:80"
+    volumes:
+      - ./public_html:/var/www/html
+      - ./_docker/conf/php8/php.ini:/usr/local/etc/php/php.ini
+      - ./_docker/conf/php8/apache2.conf:/etc/apache2/apache2.conf
+      - ./_docker/log/php8/:/var/log/apache2
+    links:
+      - "db:mariadb"
+
+  db:
+    build:
+      context: ./_docker/bin/mariadb
+    restart: always
+    container_name: db
+    ports:
+      - "3336:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=111111
+      - MYSQL_DATABASE=root
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=111111
+    volumes:
+      - ./dbdata/:/var/lib/mysql/root
+      - ./_docker/conf/mariadb/my.cnf:/etc/mysql/my.cnf
+      - ./_docker/log/mariadb/error.log:/var/lib/mysql/error.log
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    container_name: phpmyadmin
+    ports:
+      - '8880:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: password
+    links:
+      - db
