@@ -8,10 +8,12 @@ services:
     container_name: web
     ports:
       - "9090:80"
+      - "9091:8080"
     volumes:
       - ./public_html:/var/www/html
       - ./_docker/conf/php8/php.ini:/usr/local/etc/php/php.ini
       - ./_docker/conf/php8/apache2.conf:/etc/apache2/apache2.conf
+      - ./_docker/conf/php8/000-default.conf:/etc/apache2/sites-available/000-default.conf
       - ./_docker/log/php8/:/var/log/apache2
     links:
       - "db:mariadb"
