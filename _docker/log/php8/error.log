@@ -29,3 +29,32 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
 [Thu Apr 22 14:47:31.224169 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.0.3 configured -- resuming normal operations
 [Thu Apr 22 14:47:31.224496 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Apr 22 15:43:08.286347 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.25.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 23 02:55:57.003616 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.0.3 configured -- resuming normal operations
+[Fri Apr 23 02:55:57.004694 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Apr 23 03:59:00.940641 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.25.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 23 03:59:03.455910 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.0.3 configured -- resuming normal operations
+[Fri Apr 23 03:59:03.456798 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Apr 23 04:01:35.312638 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.25.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 23 04:01:37.339107 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.0.3 configured -- resuming normal operations
+[Fri Apr 23 04:01:37.340430 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Apr 23 04:19:06.921096 2021] [php:error] [pid 21] [client 172.25.0.1:55534] PHP Fatal error:  Uncaught Error: Class "mysqli" not found in /var/www/html/index.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/html/index.php on line 7
+[Fri Apr 23 04:21:12.244753 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.25.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 23 04:21:15.995643 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.0.3 configured -- resuming normal operations
+[Fri Apr 23 04:21:15.996899 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Apr 23 04:26:03.021671 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.25.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 23 04:26:05.949675 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.0.3 configured -- resuming normal operations
+[Fri Apr 23 04:26:05.950702 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Apr 23 04:26:08.531478 2021] [php:error] [pid 19] [client 172.25.0.1:55616] PHP Fatal error:  Uncaught Error: Class "mysqli" not found in /var/www/html/index.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/html/index.php on line 7
+[Fri Apr 23 04:26:09.168353 2021] [php:error] [pid 19] [client 172.25.0.1:55616] PHP Fatal error:  Uncaught Error: Class "mysqli" not found in /var/www/html/index.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/html/index.php on line 7
+[Fri Apr 23 04:26:09.484362 2021] [php:error] [pid 19] [client 172.25.0.1:55616] PHP Fatal error:  Uncaught Error: Class "mysqli" not found in /var/www/html/index.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/html/index.php on line 7
+[Fri Apr 23 04:26:09.718366 2021] [php:error] [pid 19] [client 172.25.0.1:55616] PHP Fatal error:  Uncaught Error: Class "mysqli" not found in /var/www/html/index.php:7\nStack trace:\n#0 {main}\n  thrown in /var/www/html/index.php on line 7
+[Fri Apr 23 04:26:19.586109 2021] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.25.0.4. Set the 'ServerName' directive globally to suppress this message
+[Fri Apr 23 04:26:22.459304 2021] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/8.0.3 configured -- resuming normal operations
+[Fri Apr 23 04:26:22.460184 2021] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
