@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\ApiToiletController;
+use App\Http\Controllers\Api\v1\ApiToiletController;
 use App\Http\Controllers\ToiletController;
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/toilets/{address}', [ApiToiletController::class, 'index']);
+Route::prefix('v1')->name("v1.")->group(function(){
+    Route::get('/toilets/{address}', [ApiToiletController::class, 'index']);
+});

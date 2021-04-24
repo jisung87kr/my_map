@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -10,6 +10,6 @@ class ApiToiletController extends ToiletController
 {
     public function responseIndex($result)
     {
-        return $result->toJSON(JSON_PRETTY_PRINT);
+        return response()->json($result);
     }
 }
