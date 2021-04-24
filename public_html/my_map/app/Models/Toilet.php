@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Toilet extends Model
 {
     use HasFactory;
+
+    public function city()
+    {
+        return $this->belongsTo(City::class);
+    }
 }

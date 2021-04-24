@@ -5,18 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\Toilet;
 use Illuminate\Http\Request;
 
-class ToiletController extends Controller
+class ToiletController extends MapController
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function index($address)
     {
-        //
+        $result = $this->getRequestData(Toilet::class, $address);
+        return $this->responseIndex($result);
     }
 
+    public function responseIndex($result)
+    {
+        return $result;
+    }
     /**
      * Show the form for creating a new resource.
      *
